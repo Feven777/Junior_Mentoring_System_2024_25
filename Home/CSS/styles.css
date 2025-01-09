@@ -1,0 +1,34 @@
+.middle {
+    background-image: url('images/background.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header{
+    background-color: #f3f0ed;
+}
+
+.logo-name span {
+    font-size: 1em;
+    font-weight: bold;
+}
+.nav-link{
+    color: black;
+}
+
+.user-profile img {
+    border: 2px solid #644b35;
+}
+.footer-images img.footer-image {
+    width: 200px;
+    height:150px;
+    margin: 5px;
+    object-fit: cover;
+    gap: 2opx;
+}
