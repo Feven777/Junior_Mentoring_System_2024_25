@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescripto</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/profile.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Left Column: Filters -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Search Filters</h5>
+                        <button class="btn white"><a href="bio.html">Biomedical Engineering</a></button>
+                        <button class="btn white"><a href="chem.html">Chemical Engineering</a></button>
+                        <button class="btn white"><a href="civil.html">Civil Engineering</a></button>
+                        <button class="btn white"><a href="elec.html">Electrical Engineering</a></button>
+                        <button class="btn white"><a href="soft.html">Software Engineering</a></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Column: Doctor Cards -->
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4" onclick="toggleProfile('profile1')">
+                            <img src="images/image13.png" class="card-img-top" alt="Doctor">
+                            <div class="card-body">
+                                <h5 class="card-title">Heaven James</h5>
+                                <p class="card-text">Electrical Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4" onclick="toggleProfile('profile2')">
+                            <img src="images/image8.png" class="card-img-top" alt="Doctor">
+                            <div class="card-body">
+                                <h5 class="card-title">Joy Mark</h5>
+                                <p class="card-text">Electrical Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4" onclick="toggleProfile('profile3')">
+                            <img src="images/image11.png" class="card-img-top" alt="Doctor">
+                            <div class="card-body">
+                                <h5 class="card-title">Noah Gomez</h5>
+                                <p class="card-text">Electrical Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="profiles">
+        <div class="container mt-5 hidden" id="profile1">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="images/image13.png" class="card-img" alt="Heaven James Image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Heaven James</h5>
+                            <p class="card-text"><strong>Electrical Engineering - 5th Year Student</strong></p>
+                            <p class="card-text"><strong>About:</strong> Heaven is an innovative 5th-year electrical engineering student with a passion for developing cutting-edge technologies in power systems and electronics. He combines strong analytical skills with hands-on experience to create solutions that enhance energy efficiency and electronic devices.</p>
+                            <p class="card-text"><strong>Research Interests:</strong> Power systems, renewable energy, and electronic circuit design.</p>
+                            <button> Book Session Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 hidden" id="profile2">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="images/image8.png" class="card-img" alt="Joy Mark Image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Joy Mark</h5>
+                            <p class="card-text"><strong>Electrical Engineering - 5th Year Student</strong></p>
+                            <p class="card-text"><strong>About:</strong> Joy is an innovative 5th-year electrical engineering student with a passion for developing cutting-edge technologies in power systems and electronics. He combines strong analytical skills with hands-on experience to create solutions that enhance energy efficiency and electronic devices.</p>
+                            <p class="card-text"><strong>Research Interests:</strong> Power systems, renewable energy, and electronic circuit design.</p>
+                            <button> Book Session Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 hidden" id="profile3">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="images/image11.png" class="card-img" alt="Noah Gomez Image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Noah Gomez</h5>
+                            <p class="card-text"><strong>Electrical Engineering - 5th Year Student</strong></p>
+                            <p class="card-text"><strong>About:</strong> Noah is an innovative 5th-year electrical engineering student with a passion for developing cutting-edge technologies in power systems and electronics. He combines strong analytical skills with hands-on experience to create solutions that enhance energy efficiency and electronic devices.</p>
+                            <p class="card-text"><strong>Research Interests:</strong> Power systems, renewable energy, and electronic circuit design.</p>
+                            <button> Book Session Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleProfile(profileId) {
+            var profiles = document.querySelectorAll(".profiles .container");
+            profiles.forEach(function(profile) {
+                profile.classList.add("hidden");
+            });
+            var profile = document.getElementById(profileId);
+            profile.classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
