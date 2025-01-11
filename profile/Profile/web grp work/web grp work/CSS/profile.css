@@ -1,0 +1,50 @@
+.mt-4 { 
+    margin-top: 100px !important; 
+}
+.btn{
+    width: 100%;
+    border: 1px; /* 5px solid border with a specific color */
+    box-shadow: 0 4px 8px #856446;
+    margin-bottom: 15px;
+    background-color: #856446; 
+}
+.btn:hover {
+    transform: scale(1.1); /* Slightly enlarge the button */
+    box-shadow: 0px 8px 12px #3c2d1f/* Deeper shadow */
+}
+a{
+    color: #fff !important; 
+    text-decoration: none !important; 
+    font-size: 1rem; 
+    transition: background-color 0.3s; 
+}
+.card {
+    height: 100%;
+}
+.card-body{
+    text-align: center;
+    align-items: center;
+}
+img{
+    border: 3px #5c3422;
+}
+button{
+    display: block;
+    color: #fff;
+    background-color: #c08552;
+    border-radius: 5px;
+    transition: transform 0.4s;
+    margin-top: 10px;
+
+}
+button:hover{
+    transform: translateY(-5px);
+    background-color:#663a1eee ;
+    box-shadow: 0px 8px 12px #3c2d1f
+
+}
+.hidden{
+   display: none !important;
+}
+
+
