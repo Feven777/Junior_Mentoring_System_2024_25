@@ -1,0 +1,93 @@
+.mt-4 { 
+    margin-top: 100px !important; 
+}
+.btn{
+    width: 100%;
+    border: 1px; /* 5px solid border with a specific color */
+    box-shadow: 0 4px 8px #856446;
+    margin-bottom: 15px;
+    background-color: #856446; 
+}
+.btn:hover {
+    transform: scale(1.1); /* Slightly enlarge the button */
+    box-shadow: 0px 8px 12px #3c2d1f/* Deeper shadow */
+}
+a{
+    color: brown !important; 
+    text-decoration: none !important; 
+    font-size: 1rem; 
+    transition: background-color 0.3s; 
+}
+.card {
+    height: 100%;
+}
+.card-body{
+    text-align: center;
+    align-items: center;
+}
+img{
+    border: 3px #5c3422;
+}
+button{
+    display: block;
+    color: #fff;
+    background-color: #c08552;
+    border-radius: 5px;
+    transition: transform 0.4s;
+    margin-top: 10px;
+
+}
+button:hover{
+    transform: translateY(-5px);
+    background-color:#663a1eee ;
+    box-shadow: 0px 8px 12px #3c2d1f
+
+}
+.hidden{
+   display: none !important;
+}
+header {
+    background-color: #f8f9fa;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #644b35;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav .nav-link {
+  color: #644b35;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.nav .nav-link:hover {
+  color: #333;
+  font-weight: bold;
+}
+
+.user-profile img {
+  border: 2px solid #644b35;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Gallery</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header
+      class="bg-light p-3 shadow-sm d-flex justify-content-between align-items-center"
+    >
+      <div class="logo-name d-flex align-items-center gap-2">
+        <i class="fa-solid fa-lightbulb fa-2xl text-brown"></i>
+        <span class="font-weight-bold">Junior Mentoring System</span>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-brown" href="../homepage/home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-brown" href="../loginpage/login.html"
+              >Login</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-brown" href="../profilepage/bio.html"
+              >Profile</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-brown" href="#">Library</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-brown" href="#">Schedule</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-profile">
+        <img
+          src="../homepage/images/user-profile.jpg"
+          alt="User Profile"
+          class="rounded-circle border border-2 border-brown"
+          width="50"
+          height="50"
+        />
+      </div>
+    </header>
+    <div class="container">
+      <div class="sidebar">
+        <h3>Departments</h3>
+        <ul>
+          <li>
+            <button onclick="filterBooks('all')" class="active">All</button>
+          </li>
+          <li><button onclick="filterBooks('chemical')">Chemical</button></li>
+          <li>
+            <button onclick="filterBooks('bio-medical')">Bio-Medical</button>
+          </li>
+          <li><button onclick="filterBooks('software')">Software</button></li>
+          <li>
+            <button onclick="filterBooks('electrical')">Electrical</button>
+          </li>
+          <li>
+            <button onclick="filterBooks('mechanical')">Mechanical</button>
+          </li>
+          <li><button onclick="filterBooks('civil')">Civil</button></li>
+        </ul>
+      </div>
+      <div class="gallery">
+        <div class="book" data-department="chemical">
+          <img src="asset/che1.jpeg" alt="Principles of Chemical Engineering" />
+          <a href="asset/chemical1.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="bio-medical">
+          <img src="asset/bio2.jpg" alt="Bio-Medical Book" />
+          <a href="asset/bm1.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="software">
+          <img src="asset/se1.jpeg" alt="Software Engineering" />
+          <a href="asset/site1.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="software">
+          <img src="asset/se2.jpeg" alt="Software Engineering" />
+          <a href="asset/site2.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="chemical">
+          <img src="asset/che2.jpeg" alt="chemical Engineering" />
+          <a href="asset/chemical2.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="bio-medical">
+          <img src="asset/bio3.jpeg" alt="bio-medical Engineering" />
+          <a href="asset/bm2.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="electrical">
+          <img src="asset/elec1.jpeg" alt="Electrical Engineering" />
+          <a href="asset/elec1.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="electrical">
+          <img src="asset/elec2.jpeg" alt="Electrical" />
+          <a href="asset/elec2.PDF" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="software">
+          <img src="asset/se3.jpeg" alt="Software Engineering" />
+          <a href="asset/site3.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="electrical">
+          <img src="asset/elec3.jpeg" alt="Electrical Engineering" />
+          <a href="asset/signal.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="chemical">
+          <img src="asset/che3.jpeg" alt="chemical Engineering" />
+          <a href="asset/chemical3.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="chemical">
+          <img src="asset/che4.jpeg" alt="Chemical Engineering" />
+          <a href="asset/chemical4.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="civil">
+          <img src="asset/civil1.jpeg" alt="civil Engineering" />
+          <a href="asset/civil1.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="civil">
+          <img src="asset/civil2.jpeg" alt="civil Engineering" />
+          <a href="asset/civil2.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="civil">
+          <img src="asset/civil3.jpeg" alt="Civil Engineering" />
+          <a href="asset/civil3.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="civil">
+          <img src="asset/civil4.jpeg" alt="Civil Engineering" />
+          <a href="asset/civil4.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="mechanical">
+          <img src="asset/mec1.jpeg" alt="Mechanical Engineering" />
+          <a href="asset/mechanical1.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="mechanical">
+          <img src="asset/mec2.jpeg" alt="Mechanical Engineering" />
+          <a href="asset/mechanical2.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="mechanical">
+          <img src="asset/mec4.jpeg" alt="Mechanical Engineering" />
+          <a href="asset/mechanical3.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="mechanical">
+          <img src="asset/mec5.jpeg" alt="Mechanical Engineering" />
+          <a href="asset/mechanical4.zip" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="software">
+          <img src="asset/se4.jpeg" alt="Software Engineering" />
+          <a href="asset/site4.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="software">
+          <img src="asset/se5.webp" alt="Software Engineering" />
+          <a href="asset/site5.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="software">
+          <img src="asset/se6.png" alt="Software Engineering" />
+          <a href="asset/site6.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="software">
+          <img src="asset/se7.jpeg" alt="Software Engineering" />
+          <a href="asset/site7.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="bio-medical">
+          <img src="asset/bio5.jpeg" alt="Bio-Medical Engineering" />
+          <a href="asset/bm5.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="bio-medical">
+          <img src="asset/bio6.jpeg" alt="Bio-Medical Engineering" />
+          <a href="asset/bm6.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="bio-medical">
+          <img src="asset/bio3.jpeg" alt="Bio-Medical Engineering" />
+          <a href="asset/bm1.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="bio-medical">
+          <img src="asset/bio8.jpeg" alt="Bio-Medical Engineering" />
+          <a href="asset/bm8.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="civil">
+          <img src="asset/civil5.jpeg" alt="Civil Engineering" />
+          <a href="asset/civil5.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="civil">
+          <img src="asset/civil6.jpeg" alt="Civil Engineering" />
+          <a href="asset/civil6.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="civil">
+          <img src="asset/civil7.jpeg" alt="Civil Engineering" />
+          <a href="asset/civil7.pptx" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="chemical">
+          <img src="asset/che5.jpeg" alt="chemical Engineering" />
+          <a href="asset/chemical5.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="chemical">
+          <img src="asset/che6.jpeg" alt="chemical Engineering" />
+          <a href="asset/chemical6.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="chemical">
+          <img src="asset/che7.jpeg" alt="chemical Engineering" />
+          <a href="asset/chemical7.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="chemical">
+          <img src="asset/che8.jpeg" alt="chemical Engineering" />
+          <a href="asset/chemical8.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="mechanical">
+          <img src="asset/mec5.jpeg" alt="Mechanical Engineering" />
+          <a href="asset/Machine5.zip" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="mechanical">
+          <img src="asset/mec6.jpeg" alt="Mechanical Engineering" />
+          <a href="asset/mechanical1.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="electrical">
+          <img src="asset/elec4.jpeg" alt="Electrical Engineering" />
+          <a href="asset/elec4.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="electrical">
+          <img src="asset/elec5.jpeg" alt="Electrical Engineering" />
+          <a href="asset/elec5.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="electrical">
+          <img src="asset/elec6.jpeg" alt="Electrical Engineering" />
+          <a href="asset/elec6.pdf" download>Download PDF</a>
+        </div>
+        <div class="book" data-department="electrical">
+          <img src="asset/elec7.jpeg" alt="Electrical Engineering" />
+          <a href="asset/elec7.pdf" download>Download PDF</a>
+        </div>
+      </div>
+    </div>
+    <script src="script/script.ts"></script>
+
+    <script>
+      function filterBooks(department) {
+        const books = document.querySelectorAll(".book");
+        books.forEach((book) => {
+          if (book.dataset.department === department || department === "all") {
+            book.style.display = "block";
+          } else {
+            book.style.display = "none";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

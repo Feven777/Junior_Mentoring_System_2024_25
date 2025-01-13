@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentoring Juniors at AAIT - Login</title>
+
+    <link rel="stylesheet" href="./CSS/index.css" />
+  </head>
+  <body>
+    <h2 class="mentorship-description">
+      <strong>AAIT Mentorship Platform</strong>
+    </h2>
+    <div class="container">
+      <div class="row">
+        <div class="image-section">
+          <img
+            src="./image/Mentor handbooks.png.png"
+            alt="AAU Community Image"
+            class="img-fluid"
+          />
+        </div>
+        <div class="form-section" id="login-section">
+          <h1>Welcome Back!</h1>
+          <p>Login to continue</p>
+
+          <!-- login form -->
+          <form id="login-form">
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="id">ID:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="id"
+                placeholder="Enter ID"
+                required
+              />
+            </div>
+            <button id="login-button" type="submit" class="Login-block">
+              Login
+            </button>
+          </form>
+          <div class="signup-link">
+            <span>New User? <a href="#" id="signup-link">Sign Up</a></span>
+          </div>
+          <div class="forgot-password-link">
+            <span
+              >Forgot your password?
+              <a href="#" id="forgot-password-link">Reset it here</a></span
+            >
+          </div>
+        </div>
+
+        <div class="form-section" id="signup-section">
+          <h1>Create Account</h1>
+          <p>Sign up to get started</p>
+
+          <!-- signup form -->
+          <form id="signup-form">
+            <div class="form-group">
+              <label for="full-name">Full Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter full name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender:</label>
+              <select class="form-control" id="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="new-email">Email address:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="new-email"
+                placeholder="Enter email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="new-id">ID:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="password"
+                placeholder="Enter ID"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Create Account
+            </button>
+          </form>
+          <div class="login-link">
+            <span
+              >Already have an account?
+              <a href="#" id="login-link">Login</a></span
+            >
+          </div>
+        </div>
+
+        <!-- email verificatino -->
+
+        <div class="form-section" id="verification-email-section">
+          <h1>Email Verification</h1>
+          <p>Please verify your email address</p>
+          <form id="email-verification">
+            <div class="form-group">
+              <label for="verification-code">Verification Code:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="verification-code"
+                placeholder="Enter verification code"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Verify
+            </button>
+          </form>
+        </div>
+        <div class="form-section" id="dashboard-section">
+          <h1>Welcome to Your Dashboard</h1>
+          <p>Access your account details and manage settings</p>
+          <!-- Add dashboard content here -->
+        </div>
+
+        <!-- forgot passowrd -->
+        <div class="form-section" id="forgot-password-section">
+          <h1>Forgot Password</h1>
+          <p>Reset your password</p>
+          <form id="reset-password">
+            <div class="form-group">
+              <label for="reset-email">Email address:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="reset-email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Send Reset Link
+            </button>
+          </form>
+          <div class="login-link">
+            <span
+              >Remembered your password?
+              <a href="#" id="back-to-login-link">Login</a></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

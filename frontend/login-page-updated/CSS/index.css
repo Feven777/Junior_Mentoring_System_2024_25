@@ -1,0 +1,99 @@
+/* Custom styles to complement Bootstrap */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF2E3;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+.image-section {
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    margin: 1%;
+}
+.image-section img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+.row {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+}
+.form-section {
+    background: white;
+    padding: 30px;
+    margin: 2% 1%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    width: 48%;
+    font-size: 16px;
+    border: none;
+}
+.form-section h1 {
+    margin-bottom: 20px;
+}
+.form-section p {
+    margin-bottom: 20px;
+    color: #666;
+}
+.form-section form .form-group label {
+    display: block;
+    padding: 10px;
+}
+.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 96%;
+}
+button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #E0EEEE;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+button:hover {
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+}
+.signup-link, .login-link, .forgot-password-link {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.signup-link a, .login-link a, .forgot-password-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+.signup-link a:hover, .login-link a:hover, .forgot-password-link a:hover {
+    text-decoration: underline;
+}
+#signup-section, #verification-email-section, #dashboard-section, #forgot-password-section {
+    display: none;
+    background: white;
+    padding: 10px;
+    margin: 2% 1%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    width: 48%;
+}

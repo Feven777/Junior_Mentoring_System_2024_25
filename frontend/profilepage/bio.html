@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prescripton</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/profile.css" />
+  </head>
+  <body>
+    <header
+      class="bg-light p-3 shadow-sm d-flex justify-content-between align-items-center"
+    >
+      <div class="logo-name d-flex align-items-center gap-2">
+        <i class="fa-solid fa-lightbulb fa-2xl text-brown"></i>
+        <span class="font-weight-bold">Junior Mentoring System</span>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-brown" href="../homepage/home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-brown" href="../loginpage/login.html"
+              >Login</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-brown" href="../profilepage/bio.html"
+              >Profile</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-brown" href="../librarypage/library.html"
+              >Library</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-brown"
+              href="../profilepage/schedule/schedule.html"
+              >Schedule</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="user-profile">
+        <img
+          src="../homepage/images/user-profile.jpg"
+          alt="User Profile"
+          class="rounded-circle border border-2 border-brown"
+          width="50"
+          height="50"
+        />
+      </div>
+    </header>
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Left Column: Filters -->
+        <div class="col-md-3">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Search Filters</h5>
+              <button class="btn white">
+                <a href="bio.html">Biomedical Engineering</a>
+              </button>
+              <button class="btn white">
+                <a href="chem.html">Chemical Engineering</a>
+              </button>
+              <button class="btn white">
+                <a href="civil.html">Civil Engineering</a>
+              </button>
+              <button class="btn white">
+                <a href="elec.html">Electrical Engineering</a>
+              </button>
+              <button class="btn white">
+                <a href="soft.html">Software Engineering</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Right Column: Mentors Cards -->
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4" onclick="toggleProfile('profile1')">
+                <img
+                  src="images/image1.png"
+                  class="card-img-top"
+                  alt="Doctor"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Simone James</h5>
+                  <p class="card-text">Biomedical Engineer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4" onclick="toggleProfile('profile2')">
+                <img
+                  src="images/image2.png"
+                  class="card-img-top"
+                  alt="Doctor"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">John Mark</h5>
+                  <p class="card-text">Biomedical Engineer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4" onclick="toggleProfile('profile3')">
+                <img
+                  src="images/image3.png"
+                  class="card-img-top"
+                  alt="Doctor"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Maria Gomez</h5>
+                  <p class="card-text">Biomedical Engineer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----Profiles ----->
+
+    <div class="profiles">
+      <div class="container mt-5 hidden" id="profile1">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="images/image1.png" class="card-img" alt="Student Image" />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Simone James</h5>
+              <p class="card-text">
+                <strong>Biomedical Science - 5th Year Student</strong>
+              </p>
+              <p class="card-text">
+                <strong>About:</strong> Simone is a dedicated 5th-year
+                biomedical science student with a passion for research and
+                innovation. She has consistently demonstrated a strong
+                commitment to academic excellence and hands-on experience in the
+                field. Simone is focused on understanding complex biological
+                systems, developing new medical technologies, and contributing
+                to the future of healthcare.
+              </p>
+              <p class="card-text">
+                <strong>Research Interests:</strong> Medical technology, genetic
+                engineering, and regenerative medicine.
+              </p>
+              <a href="../profilepage/schedule/schedule.html"
+                ><button>Book Session Now</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5 hidden" id="profile2">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img
+              src="images/image2.png"
+              class="card-img"
+              alt="John Mark Image"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">John Mark</h5>
+              <p class="card-text">
+                <strong>Biomedical Science - 5th Year Student</strong>
+              </p>
+              <p class="card-text">
+                <strong>About:</strong> John is a passionate 5th-year biomedical
+                science student dedicated to exploring the intersections of
+                biology and technology. He excels in academic research and
+                practical applications, with a strong interest in developing
+                innovative solutions to healthcare challenges.
+              </p>
+              <p class="card-text">
+                <strong>Research Interests:</strong> Biomedical engineering,
+                nanotechnology, and personalized medicine.
+              </p>
+              <a href="../profilepage/schedule/schedule.html"
+                ><button>Book Session Now</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5 hidden" id="profile3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img
+              src="images/image3.png"
+              class="card-img"
+              alt="Maria Gomez Image"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Maria Gomez</h5>
+              <p class="card-text">
+                <strong>Biomedical Science - 5th Year Student</strong>
+              </p>
+              <p class="card-text">
+                <strong>About:</strong> Maria is an enthusiastic 5th-year
+                biomedical science student with a keen interest in genetic
+                research and its implications for future medical advancements.
+                She is committed to both academic excellence and hands-on
+                laboratory experience, aiming to contribute significantly to the
+                field of genetics and biotechnology.
+              </p>
+              <p class="card-text">
+                <strong>Research Interests:</strong> Genetic research,
+                biotechnology, and disease prevention.
+              </p>
+              <a href="../profilepage/schedule/schedule.html"
+                ><button>Book Session Now</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleProfile(profileId) {
+        var profiles = document.getElementsByClassName("container mt-5");
+        for (var i = 0; i < profiles.length; i++) {
+          profiles[i].classList.add("hidden");
+        }
+        var profile = document.getElementById(profileId);
+        if (profile.classList.contains("hidden")) {
+          profile.classList.remove("hidden");
+        } else {
+          profile.classList.add("hidden");
+        }
+      }
+    </script>
+  </body>
+</html>

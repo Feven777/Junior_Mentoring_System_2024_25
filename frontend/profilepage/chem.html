@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prescripton</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/profile.css" />
+  </head>
+  <body>
+    <header
+      class="bg-light p-3 shadow-sm d-flex justify-content-between align-items-center"
+    >
+      <div class="logo-name d-flex align-items-center gap-2">
+        <i class="fa-solid fa-lightbulb fa-2xl text-brown"></i>
+        <span class="font-weight-bold">Junior Mentoring System</span>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-brown" href="../homepage/home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-brown" href="../loginpage/login.html"
+              >Login</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-brown" href="../profilepage/bio.html"
+              >Profile</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-brown" href="../librarypage/library.html"
+              >Library</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-brown" href="#">Schedule</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-profile">
+        <img
+          src="../homepage/images/user-profile.jpg"
+          alt="User Profile"
+          class="rounded-circle border border-2 border-brown"
+          width="50"
+          height="50"
+        />
+      </div>
+    </header>
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Left Column: Filters -->
+        <div class="col-md-3">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Search Filters</h5>
+              <button class="btn white">
+                <a href="bio.html">Biomedical Engineering</a>
+              </button>
+              <button class="btn white">
+                <a href="chem.html">Chemical Engineering</a>
+              </button>
+              <button class="btn white">
+                <a href="civil.html">Civil Engineering</a>
+              </button>
+              <button class="btn white">
+                <a href="elec.html">Electrical Engineering</a>
+              </button>
+              <button class="btn white">
+                <a href="soft.html">Software Engineering</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Right Column: Mentors Cards -->
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4" onclick="toggleProfile('profile1')">
+                <img
+                  src="images/image4.png"
+                  class="card-img-top"
+                  alt="Doctor"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">James Mark</h5>
+                  <p class="card-text">Chemical Engineer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4" onclick="toggleProfile('profile2')">
+                <img
+                  src="images/image5.png"
+                  class="card-img-top"
+                  alt="Doctor"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Nina Spector</h5>
+                  <p class="card-text">Chemical Engineer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4" onclick="toggleProfile('profile3')">
+                <img
+                  src="images/image6.png"
+                  class="card-img-top"
+                  alt="Doctor"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sam Zek</h5>
+                  <p class="card-text">Chemical Engineer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profiles -->
+    <div class="profiles">
+      <div class="container mt-5 hidden" id="profile1">
+        <div class="card">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img
+                src="images/image4.png"
+                class="card-img"
+                alt="James Mark Image"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">James Mark</h5>
+                <p class="card-text">
+                  <strong>Chemical Engineering - 5th Year Student</strong>
+                </p>
+                <p class="card-text">
+                  <strong>About:</strong> James is an enthusiastic 5th-year
+                  chemical engineering student with a focus on sustainable
+                  energy solutions and materials science. He excels in both
+                  theoretical knowledge and practical applications, aiming to
+                  contribute to the advancement of green technologies.
+                </p>
+                <p class="card-text">
+                  <strong>Research Interests:</strong> Sustainable energy,
+                  materials science, and chemical process engineering.
+                </p>
+                <a href="../profilepage/schedule/schedule.html"
+                  ><button>Book Session Now</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5 hidden" id="profile2">
+        <div class="card">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img
+                src="images/image5.png"
+                class="card-img"
+                alt="Nina Spector Image"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Nina Spector</h5>
+                <p class="card-text">
+                  <strong>Chemical Engineering - 5th Year Student</strong>
+                </p>
+                <p class="card-text">
+                  <strong>About:</strong> Nina is an enthusiastic 5th-year
+                  chemical engineering student with a focus on sustainable
+                  energy solutions and materials science. She excels in both
+                  theoretical knowledge and practical applications, aiming to
+                  contribute to the advancement of green technologies.
+                </p>
+                <p class="card-text">
+                  <strong>Research Interests:</strong> Sustainable energy,
+                  materials science, and chemical process engineering.
+                </p>
+                <a href="../profilepage/schedule/schedule.html"
+                  ><button>Book Session Now</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5 hidden" id="profile3">
+        <div class="card">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img
+                src="images/image6.png"
+                class="card-img"
+                alt="Sam Zek Image"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Sam Zek</h5>
+                <p class="card-text">
+                  <strong>Chemical Engineering - 5th Year Student</strong>
+                </p>
+                <p class="card-text">
+                  <strong>About:</strong> Sam is an enthusiastic 5th-year
+                  chemical engineering student with a focus on sustainable
+                  energy solutions and materials science. She excels in both
+                  theoretical knowledge and practical applications, aiming to
+                  contribute to the advancement of green technologies.
+                </p>
+                <p class="card-text">
+                  <strong>Research Interests:</strong> Sustainable energy,
+                  materials science, and chemical process engineering.
+                </p>
+                <a href="../profilepage/schedule/schedule.html"
+                  ><button>Book Session Now</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleProfile(profileId) {
+        var profiles = document.querySelectorAll(".profiles .container");
+        profiles.forEach(function (profile) {
+          profile.classList.add("hidden");
+        });
+        var profile = document.getElementById(profileId);
+        profile.classList.remove("hidden");
+      }
+    </script>
+  </body>
+</html>
