@@ -15,23 +15,27 @@
                 <img src="./image/Mentor handbooks.png.png" alt="AAU Community Image" class="img-fluid">
             </div>
             <div class="form-section" id="login-section">
-                <h1>Welcome Back!</h1>
-                <p>Login to continue</p>
-                <form>
-                    <div class="form-group">
-                        <label for="email">Email address:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="id">ID:</label>
-                        <input type="text" class="form-control" id="id" placeholder="Enter ID" required>
-                    </div>
-                    <button type="submit" class="Login-block">Login</button>
-                </form>
-                <div class="signup-link">
-                    <span>New User? <a href="#" id="signup-link">Sign Up</a></span>
-                </div>
-            </div>
+    <h1>Welcome Back!</h1>
+    <p>Login to continue</p>
+    <form>
+        <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+        </div>
+        <div class="form-group">
+            <label for="id">ID:</label>
+            <input type="text" class="form-control" id="id" placeholder="Enter ID" required>
+        </div>
+        <button type="submit" class="Login-block">Login</button>
+    </form>
+    <div class="signup-link">
+        <span>New User? <a href="#" id="signup-link">Sign Up</a></span>
+    </div>
+    <div class="forgot-password-link">
+        <span>Forgot your password? <a href="#" id="forgot-password-link">Reset it here</a></span>
+    </div>
+</div>
+
             <div class="form-section" id="signup-section" >
                 <h1>Create Account</h1>
                 <p>Sign up to get started</p>
@@ -62,6 +66,39 @@
                     <span>Already have an account? <a href="#" id="login-link">Login</a></span>
                 </div>
             </div>
+            <div class="form-section" id="verification-email-section">
+    <h1>Email Verification</h1>
+    <p>Please verify your email address</p>
+    <form>
+        <div class="form-group">
+            <label for="verification-code">Verification Code:</label>
+            <input type="text" class="form-control" id="verification-code" placeholder="Enter verification code" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Verify</button>
+    </form>
+</div>
+
+<div class="form-section" id="dashboard-section">
+    <h1>Welcome to Your Dashboard</h1>
+    <p>Access your account details and manage settings</p>
+    <!-- Add dashboard content here -->
+</div>
+
+<div class="form-section" id="forgot-password-section">
+    <h1>Forgot Password</h1>
+    <p>Reset your password</p>
+    <form>
+        <div class="form-group">
+            <label for="reset-email">Email address:</label>
+            <input type="email" class="form-control" id="reset-email" placeholder="Enter your email" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Reset Link</button>
+    </form>
+    <div class="login-link">
+        <span>Remembered your password? <a href="#" id="back-to-login-link">Login</a></span>
+    </div>
+</div>
+
         </div>
     </div>
 
